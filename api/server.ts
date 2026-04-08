@@ -2,11 +2,14 @@ import express from 'express';
 import cors from 'cors';
 import { v4 as uuidv4 } from 'uuid';
 
-// Use local JSON file DB for development, DynamoDB for production (Lambda)
-const isLocal = !process.env.LAMBDA_TASK_ROOT;
-const db = isLocal
-  ? await import('./local-db.js')
-  : await import('./dynamodb.js');
+// Use memory-db for Vercel, local JSON file DB for local dev, DynamoDB for Lambda
+const isVercel = !!process.env.VERCEL;
+const isLambda = !!process.env.LAMBDA_TASK_ROOT;
+const db = isVercel
+  ? await import('./memory-db.js')
+  : isLambda
+    ? await import('./dynamodb.js')
+    : await import('./local-db.js');
 const { TABLES, putItem, getItem, scanItems, updateItem, deleteItem } = db;
 
 const app = express();
@@ -345,10 +348,12 @@ app.delete('/api/recruitment/:id', async (req, res) => {
   }
 });
 
-// ========== Start Server (for local dev) ==========
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`API server running on port ${PORT}`);
-});
+// ========== Start Server (for local dev only) ==========
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}`);
+  });
+}
 
 export default app;

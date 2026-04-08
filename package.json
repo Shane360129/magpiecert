@@ -5,13 +5,11 @@
   "scripts": {
     "dev": "vite",
     "dev:api": "npx tsx watch api/server.ts",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "build:ts": "tsc && vite build",
     "build:api": "npx tsc -p tsconfig.api.json",
     "preview": "vite preview",
-    "seed": "npx tsx api/seed.ts",
-    "deploy:api": "npm run build:api && npx serverless deploy --stage prod",
-    "deploy:frontend": "npm run build && aws s3 sync dist/ s3://$npm_config_bucket/ --delete && aws cloudfront create-invalidation --distribution-id $npm_config_cf_dist --paths '/*'",
-    "deploy": "npm run deploy:api && npm run deploy:frontend"
+    "seed": "npx tsx api/seed.ts"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.1023.0",
