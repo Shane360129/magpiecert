@@ -21,11 +21,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center max-w-7xl py-3">
         {/* Logo Area */}
         <Link to="/" className="flex items-center gap-3 cursor-pointer shrink-0">
-          <img
-            src="/assets/magpiecert_full_page_1775046941679.png"
-            alt="藍鵲標誌"
-            className="h-14 w-auto object-contain"
-          />
+          <div className="h-14 w-14 bg-gray-200 rounded-lg border border-gray-300"></div>
           <div className="flex flex-col">
             <span className="text-magpie-primary font-bold text-xl leading-tight tracking-wide">藍鵲驗證</span>
             <span className="text-magpie-primary text-xs leading-none tracking-widest font-medium">MagpieCert</span>
