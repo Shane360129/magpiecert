@@ -27,9 +27,10 @@ const News: React.FC = () => {
   const categoryMap: Record<string, string> = {
     '農業知識': '農產新知',
     '媒體報導': '新聞媒體',
+    '常見問題': '常見問題',
   };
 
-  const categories = ['全部消息', '農業知識', '媒體報導'];
+  const categories = ['全部消息', '農業知識', '媒體報導', '常見問題'];
 
   const filteredNews = newsItems.filter(item => {
     const matchCategory = activeCategory === '全部消息' ||

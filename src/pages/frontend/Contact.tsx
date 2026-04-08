@@ -1,7 +1,9 @@
-import React from 'react';
-import { Mail, Phone, Printer, MapPin, Send } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Phone, Printer, MapPin, Send, FileText, MessageSquare } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'quote' | 'feedback'>('quote');
+
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
       {/* Page Header */}
@@ -64,9 +66,33 @@ const Contact: React.FC = () => {
            
            {/* Form Area */}
            <div className="p-10 md:p-14 md:w-3/5">
-              <h2 className="text-2xl font-bold text-gray-800 mb-8">傳送您的需求表單</h2>
-              
-              <form className="space-y-6">
+              {/* Tab Switch */}
+              <div className="flex border-b border-gray-200 mb-8">
+                <button
+                  onClick={() => setActiveTab('quote')}
+                  className={`flex items-center gap-2 px-6 py-3 font-bold text-sm transition-colors border-b-3 ${
+                    activeTab === 'quote'
+                      ? 'border-b-2 border-magpie-primary text-magpie-primary'
+                      : 'border-transparent text-gray-400 hover:text-gray-700'
+                  }`}
+                >
+                  <FileText size={16} /> 獲得報價
+                </button>
+                <button
+                  onClick={() => setActiveTab('feedback')}
+                  className={`flex items-center gap-2 px-6 py-3 font-bold text-sm transition-colors border-b-3 ${
+                    activeTab === 'feedback'
+                      ? 'border-b-2 border-magpie-primary text-magpie-primary'
+                      : 'border-transparent text-gray-400 hover:text-gray-700'
+                  }`}
+                >
+                  <MessageSquare size={16} /> 意見反饋
+                </button>
+              </div>
+
+              {/* 獲得報價 Form */}
+              {activeTab === 'quote' && (
+              <form className="space-y-6 animate-fade-in">
                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                        <label className="block text-sm font-bold text-gray-700 mb-2">公司/單位名稱 *</label>
@@ -77,7 +103,7 @@ const Contact: React.FC = () => {
                        <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition" placeholder="真實姓名與稱謂" required />
                     </div>
                  </div>
-                 
+
                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                        <label className="block text-sm font-bold text-gray-700 mb-2">聯絡電話/手機 *</label>
@@ -88,31 +114,75 @@ const Contact: React.FC = () => {
                        <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition" placeholder="name@domain.com" required />
                     </div>
                  </div>
-                 
+
                  <div>
                     <label className="block text-sm font-bold text-gray-700 mb-2">詢問類別主題</label>
                     <select className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition font-bold text-gray-700">
                        <option>我要獲得報價與初次驗證評估</option>
                        <option>我想了解教育訓練與企業包班</option>
                        <option>驗證機構轉移相關諮詢</option>
-                       <option>意見反饋與顧客申訴</option>
                        <option>其他合作提案</option>
                     </select>
                  </div>
-                 
+
                  <div>
                     <label className="block text-sm font-bold text-gray-700 mb-2">需求詳細說明 *</label>
-                    <textarea 
-                      rows={5} 
-                      className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition resize-none" 
+                    <textarea
+                      rows={5}
+                      className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition resize-none"
                       placeholder="請具體描述您的需求或產品項目，以利人員加速為您處理..." required
                     ></textarea>
                  </div>
-                 
+
                  <button type="submit" className="flex items-center justify-center gap-2 w-full sm:w-auto bg-magpie-dark hover:bg-magpie-primary text-white px-10 py-4 font-bold rounded shadow-lg transition-colors">
                     <Send size={18} /> 送出表單
                  </button>
               </form>
+              )}
+
+              {/* 意見反饋 Form */}
+              {activeTab === 'feedback' && (
+              <form className="space-y-6 animate-fade-in">
+                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                       <label className="block text-sm font-bold text-gray-700 mb-2">姓名 *</label>
+                       <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition" placeholder="您的姓名" required />
+                    </div>
+                    <div>
+                       <label className="block text-sm font-bold text-gray-700 mb-2">電子信箱 Email *</label>
+                       <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition" placeholder="name@domain.com" required />
+                    </div>
+                 </div>
+
+                 <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">聯絡電話</label>
+                    <input type="tel" className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition" placeholder="例如: 0912-345-678" />
+                 </div>
+
+                 <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">反饋類型</label>
+                    <select className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition font-bold text-gray-700">
+                       <option>服務品質建議</option>
+                       <option>驗證流程改善</option>
+                       <option>顧客申訴</option>
+                       <option>其他意見</option>
+                    </select>
+                 </div>
+
+                 <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">意見內容 *</label>
+                    <textarea
+                      rows={6}
+                      className="w-full bg-gray-50 border border-gray-200 rounded p-3 focus:outline-none focus:border-magpie-primary focus:bg-white transition resize-none"
+                      placeholder="請詳細描述您的意見或建議，我們將認真處理每一則反饋..." required
+                    ></textarea>
+                 </div>
+
+                 <button type="submit" className="flex items-center justify-center gap-2 w-full sm:w-auto bg-magpie-dark hover:bg-magpie-primary text-white px-10 py-4 font-bold rounded shadow-lg transition-colors">
+                    <Send size={18} /> 送出意見
+                 </button>
+              </form>
+              )}
            </div>
 
         </div>

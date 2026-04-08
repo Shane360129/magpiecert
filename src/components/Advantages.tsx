@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const advantages = [
   {
@@ -52,6 +53,15 @@ const Advantages: React.FC = () => {
               <p className="text-gray-600 leading-relaxed text-sm">{item.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 bg-magpie-primary hover:bg-magpie-hover text-white font-bold px-10 py-4 rounded-lg transition-colors shadow-lg text-lg"
+          >
+            獲得報價
+          </Link>
         </div>
       </div>
     </section>

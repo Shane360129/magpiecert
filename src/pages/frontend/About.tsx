@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronRight, FileText, CheckCircle, Shield, TrendingUp } from 'lucide-react';
+import { ChevronRight, FileText, CheckCircle, Shield, TrendingUp, Users, Building2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
@@ -28,7 +28,40 @@ const About: React.FC = () => {
         <div className="text-sm text-gray-400 font-medium mb-12 flex items-center gap-2">
            <Link to="/" className="hover:text-magpie-primary transition">首頁</Link>
            <ChevronRight size={14} />
-           <span className="text-gray-600">政策聲明</span>
+           <span className="text-gray-600">關於我們</span>
+        </div>
+
+        {/* About MBC — 公司簡介 */}
+        <div className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-2 h-10 bg-[#00A1E0] rounded-full"></div>
+            <h2 className="text-4xl font-black text-gray-900 tracking-wide">About MBC</h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-magpie-primary mb-6 flex items-center gap-2">
+                <Building2 size={24} /> 公司簡介
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                藍鵲驗證服務股份有限公司（Blue Magpie Certifications, Inc.）是台灣專業的驗證與教育訓練機構，致力於協助企業取得國際認證，建立完善的品質管理體系。
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                我們擁有豐富的業界實務經驗，提供客製化的驗證輔導與專業課程服務，涵蓋 ISO 管理系統驗證、農產品產銷履歷與有機驗證、ESG 溫室氣體查驗等多元領域。
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                秉持公正、專業、誠信的核心價值，我們持續精進服務品質，成為企業最值得信賴的驗證夥伴。
+              </p>
+            </div>
+            <div className="bg-gray-100 rounded-2xl h-80 flex items-center justify-center overflow-hidden">
+              <img src="/assets/about_greenhouse_1775051032770.png" alt="藍鵲驗證" className="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+
+        {/* 政策聲明 Section Title */}
+        <div className="flex items-center gap-3 mb-8">
+          <div className="w-2 h-10 bg-[#00A1E0] rounded-full"></div>
+          <h2 className="text-4xl font-black text-gray-900 tracking-wide">政策聲明</h2>
         </div>
 
         {/* Tab Navigation */}
@@ -170,6 +203,26 @@ const About: React.FC = () => {
                 </div>
               ))}
            </div>
+        </div>
+
+        {/* 菁英招募 */}
+        <div className="mt-20 bg-gradient-to-r from-[#1B365D] to-[#0a1f3d] rounded-2xl p-10 md:p-14 text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#00A1E0]/10 rounded-full -mr-20 -mt-20"></div>
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-6">
+              <Users size={28} className="text-[#00A1E0]" />
+              <h3 className="text-3xl font-black tracking-wide">菁英招募</h3>
+            </div>
+            <p className="text-xl text-gray-300 mb-4 max-w-2xl">
+              歡迎加入藍鵲驗證！我們重視每一位夥伴的專業發展，提供完善的職涯規劃與培訓資源。
+            </p>
+            <p className="text-gray-400 mb-8 max-w-2xl leading-relaxed">
+              如果您對驗證產業充滿熱情，期待在專業領域持續成長，藍鵲將是您發揮所長的最佳舞台。我們持續尋找具備品質管理、農業驗證、ESG 查驗等專業背景的優秀人才。
+            </p>
+            <Link to="/contact" className="inline-flex items-center gap-2 bg-[#00A1E0] hover:bg-[#0090cc] text-white font-bold px-8 py-4 rounded-lg transition-colors shadow-lg">
+              Join Us — 立即應徵
+            </Link>
+          </div>
         </div>
 
       </div>

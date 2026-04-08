@@ -127,7 +127,7 @@ const Education: React.FC = () => {
   const sidebarMenus = [
     { title: '最新課程', sub: [] },
     { title: '實體課程', sub: ['管理系統驗證', '產銷履歷農產品驗證', '有機農產品驗證'] },
-    { title: '線上講座', sub: ['ESG 線上趨勢', '最新法規研討'] },
+    { title: '線上講座', sub: ['品質管理', '農產品驗證', 'ESG查驗'] },
     { title: '知識影片', sub: [] },
     { title: '企業包班', sub: [] }
   ];
