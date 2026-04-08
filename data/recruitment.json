@@ -1,0 +1,32 @@
+[
+  {
+    "id": "R-001",
+    "title": "ISO品質管理系統 稽核員",
+    "department": "驗證部",
+    "type": "全職",
+    "status": "招募中",
+    "applicants": 12,
+    "createdAt": "2026-04-03T12:44:07.124Z",
+    "updatedAt": "2026-04-03T12:44:07.124Z"
+  },
+  {
+    "id": "R-002",
+    "title": "農產品驗證 專案管理師",
+    "department": "農產品部",
+    "type": "全職",
+    "status": "招募中",
+    "applicants": 8,
+    "createdAt": "2026-04-03T12:44:07.124Z",
+    "updatedAt": "2026-04-03T12:44:07.124Z"
+  },
+  {
+    "id": "R-003",
+    "title": "ESG查驗 分析師",
+    "department": "永續部",
+    "type": "全職",
+    "status": "招募中",
+    "applicants": 15,
+    "createdAt": "2026-04-03T12:44:07.125Z",
+    "updatedAt": "2026-04-03T12:44:07.125Z"
+  }
+]

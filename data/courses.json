@@ -1,0 +1,93 @@
+[
+  {
+    "id": "C-001",
+    "title": "ISO 9001 品質管理系統主導稽核員訓練",
+    "type": "physical",
+    "category": "品質管理",
+    "date": "2025-04-15",
+    "status": "報名中",
+    "students": 24,
+    "maxStudents": 30,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.101Z",
+    "updatedAt": "2026-04-03T12:44:07.101Z"
+  },
+  {
+    "id": "C-002",
+    "title": "產銷履歷稽核人員教育訓練",
+    "type": "physical",
+    "category": "農產品驗證",
+    "date": "2025-04-22",
+    "status": "報名中",
+    "students": 18,
+    "maxStudents": 25,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.102Z",
+    "updatedAt": "2026-04-03T12:44:07.102Z"
+  },
+  {
+    "id": "C-003",
+    "title": "ISO 14064-1 溫室氣體盤查實務班",
+    "type": "physical",
+    "category": "ESG查驗",
+    "date": "2025-05-10",
+    "status": "即將開課",
+    "students": 30,
+    "maxStudents": 30,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.103Z",
+    "updatedAt": "2026-04-03T12:44:07.103Z"
+  },
+  {
+    "id": "C-004",
+    "title": "ISO 22000 食品安全管理系統內部稽核",
+    "type": "physical",
+    "category": "品質管理",
+    "date": "2025-05-18",
+    "status": "草稿",
+    "students": 0,
+    "maxStudents": 25,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.104Z",
+    "updatedAt": "2026-04-03T12:44:07.104Z"
+  },
+  {
+    "id": "C-005",
+    "title": "有機農產品驗證實務工作坊",
+    "type": "physical",
+    "category": "農產品驗證",
+    "date": "2025-06-01",
+    "status": "報名中",
+    "students": 12,
+    "maxStudents": 20,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.106Z",
+    "updatedAt": "2026-04-03T12:44:07.106Z"
+  },
+  {
+    "id": "C-006",
+    "title": "ISO 14067 碳足跡查驗線上講座",
+    "type": "online",
+    "category": "ESG查驗",
+    "date": "2025-05-05",
+    "status": "報名中",
+    "students": 45,
+    "maxStudents": 100,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.107Z",
+    "updatedAt": "2026-04-03T12:44:07.107Z"
+  },
+  {
+    "id": "C-007",
+    "title": "品質管理系統基礎概念",
+    "type": "online",
+    "category": "品質管理",
+    "date": "2025-04-28",
+    "status": "報名中",
+    "students": 62,
+    "maxStudents": 100,
+    "description": "",
+    "createdAt": "2026-04-03T12:44:07.108Z",
+    "updatedAt": "2026-04-03T12:44:07.108Z"
+  }
+]

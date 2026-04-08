@@ -1,0 +1,68 @@
+[
+  {
+    "id": "D-001",
+    "name": "驗證品質政策及目標聲明",
+    "category": "品質管理",
+    "format": "PDF",
+    "size": "1.2 MB",
+    "downloads": 342,
+    "fileUrl": "#",
+    "createdAt": "2026-04-03T12:44:07.114Z",
+    "updatedAt": "2026-04-03T12:44:07.114Z"
+  },
+  {
+    "id": "D-002",
+    "name": "人才發展品質政策及目標聲明",
+    "category": "品質管理",
+    "format": "PDF",
+    "size": "1.1 MB",
+    "downloads": 215,
+    "fileUrl": "#",
+    "createdAt": "2026-04-03T12:44:07.115Z",
+    "updatedAt": "2026-04-03T12:44:07.115Z"
+  },
+  {
+    "id": "D-003",
+    "name": "產銷履歷驗證申請書 (v2.2)",
+    "category": "農產品驗證",
+    "format": "PDF",
+    "size": "2.4 MB",
+    "downloads": 567,
+    "fileUrl": "#",
+    "createdAt": "2026-04-03T12:44:07.116Z",
+    "updatedAt": "2026-04-03T12:44:07.116Z"
+  },
+  {
+    "id": "D-004",
+    "name": "有機農產品驗證申請書",
+    "category": "農產品驗證",
+    "format": "PDF",
+    "size": "1.8 MB",
+    "downloads": 423,
+    "fileUrl": "#",
+    "createdAt": "2026-04-03T12:44:07.117Z",
+    "updatedAt": "2026-04-03T12:44:07.117Z"
+  },
+  {
+    "id": "D-005",
+    "name": "ISO 14064-1 溫室氣體查驗申請表",
+    "category": "ESG查驗",
+    "format": "PDF",
+    "size": "0.9 MB",
+    "downloads": 189,
+    "fileUrl": "#",
+    "createdAt": "2026-04-03T12:44:07.118Z",
+    "updatedAt": "2026-04-03T12:44:07.118Z"
+  },
+  {
+    "id": "D-006",
+    "name": "ISO 14067 碳足跡查驗申請表",
+    "category": "ESG查驗",
+    "format": "PDF",
+    "size": "1.0 MB",
+    "downloads": 156,
+    "fileUrl": "#",
+    "createdAt": "2026-04-03T12:44:07.119Z",
+    "updatedAt": "2026-04-03T12:44:07.119Z"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hero-banner",
+    "section": "homepage",
+    "type": "banner",
+    "mediaType": "video",
+    "mediaUrl": "",
+    "title": "藍鵲驗證服務股份有限公司",
+    "subtitle": "Blue Magpie Certifications, Inc.",
+    "updatedAt": "2026-04-03T12:44:07.086Z"
+  },
+  {
+    "id": "hero-agri",
+    "section": "homepage",
+    "type": "hero-image",
+    "mediaUrl": "",
+    "title": "從土地出發",
+    "updatedAt": "2026-04-03T12:44:07.087Z"
+  },
+  {
+    "id": "about-intro",
+    "section": "homepage",
+    "type": "about",
+    "title": "關於藍鵲",
+    "subtitle": "國際標準驗證的領航者",
+    "body": "以「藍鵲」為名，象徵我們對臺灣生態的承諾與驕傲。我們致力於推動生態農法與環境永續，打造具國際信賴度的驗證品牌，期許成為臺灣永續發展的象徵與代表。",
+    "updatedAt": "2026-04-03T12:44:07.088Z"
+  },
+  {
+    "id": "advantage-1",
+    "section": "homepage",
+    "type": "advantage",
+    "title": "客製化服務",
+    "body": "深入了解客戶的管理系統，根據不同需求與行業特性，提供個性化的驗證服務，提升稽核的附加價值。",
+    "order": 1,
+    "updatedAt": "2026-04-03T12:44:07.090Z"
+  },
+  {
+    "id": "advantage-2",
+    "section": "homepage",
+    "type": "advantage",
+    "title": "專業顧問",
+    "body": "擁有各領域專業且經驗豐富的顧問，同時能處理多項驗證服務，協助不同產業客戶獲得適合且有用的驗證。",
+    "order": 2,
+    "updatedAt": "2026-04-03T12:44:07.091Z"
+  },
+  {
+    "id": "advantage-3",
+    "section": "homepage",
+    "type": "advantage",
+    "title": "量身規劃時程",
+    "body": "輔導時程配合客戶的人力資源配置與作業需求，制定最適合的驗證進度計劃。",
+    "order": 3,
+    "updatedAt": "2026-04-03T12:44:07.092Z"
+  },
+  {
+    "id": "advantage-4",
+    "section": "homepage",
+    "type": "advantage",
+    "title": "優質服務",
+    "body": "提供即時的諮詢與服務，縮短驗證時間，驗證完成後，提供持續的改進建議及支援。",
+    "order": 4,
+    "updatedAt": "2026-04-03T12:44:07.094Z"
+  },
+  {
+    "id": "about-company",
+    "section": "about",
+    "type": "company-intro",
+    "title": "關於藍鵲",
+    "subtitle": "國際標準驗證的領航者",
+    "body": "以「藍鵲」為名，象徵我們對臺灣生態的承諾與驕傲。",
+    "updatedAt": "2026-04-03T12:44:07.095Z"
+  },
+  {
+    "id": "policy-quality",
+    "section": "about",
+    "type": "policy",
+    "title": "驗證品質政策",
+    "body": "以嚴謹專業的態度、公正透明的過程，提供高品質驗證服務。",
+    "order": 1,
+    "updatedAt": "2026-04-03T12:44:07.096Z"
+  },
+  {
+    "id": "policy-talent",
+    "section": "about",
+    "type": "policy",
+    "title": "人才發展品質政策",
+    "body": "致力於培育具備國際視野與專業素養的驗證人才，透過系統化的教育訓練及持續學習機制，提升員工專業能力與服務品質，打造永續發展的人才梯隊。",
+    "order": 2,
+    "updatedAt": "2026-04-03T12:44:07.098Z"
+  },
+  {
+    "id": "policy-fairness",
+    "section": "about",
+    "type": "policy",
+    "title": "公正性聲明",
+    "body": "藍鵲驗證承諾以客觀、獨立、公正的態度執行所有驗證業務，不受任何商業、財務或其他利益之影響，確保驗證結果的可信度與公信力。所有驗證人員均遵守利益迴避原則，維護驗證活動之公正性。",
+    "order": 3,
+    "updatedAt": "2026-04-03T12:44:07.099Z"
+  },
+  {
+    "id": "policy-finance",
+    "section": "about",
+    "type": "policy",
+    "title": "財務來源",
+    "body": "本公司之營運資金主要來自驗證服務收入及教育訓練課程收入。公司財務獨立運作，不接受可能影響驗證公正性之資金來源，確保驗證業務之獨立性與客觀性。",
+    "order": 4,
+    "updatedAt": "2026-04-03T12:44:07.100Z"
+  }
+]
